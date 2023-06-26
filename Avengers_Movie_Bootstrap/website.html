@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body style="margin-bottom: 10px;" data-bs-spy="scroll" data-bs-target=".navbar">
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <div class="d-flex align-items-end">
+                <img src="assets/images/logo1.png" alt="" style="width: 40px;">
+                <h5 style="font-family: 'Times New Roman', Times, serif;">AVENGERS</h5>
+            </div>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Anavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-5" id="Anavbar">
+                <ul class="navbar-nav h6 me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#information">Information</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search...">
+                    <button class="btn btn-success" type="button">Search</button>
+                    <button type="button" class="btn btn-info mx-2" data-bs-toggle="modal" data-bs-target="#loginform">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Carousel -->
+
+    <div class="container-fluid p-0" id="home">
+        <div id="carouselavengers" class="carousel slide carousel-fade mt-4" data-bs-ride="carousel">
+
+            <!-- indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselavengers" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselavengers" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselavengers" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselavengers" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carouselavengers" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#carouselavengers" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#carouselavengers" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#carouselavengers" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#carouselavengers" data-bs-slide-to="8"></button>
+            </div>
+
+            <!-- The Slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2500">
+                    <img src="assets/images/slide 1.jpg" alt="" class="d-block w-100" style="height: 500px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="assets/images/slide 2" alt="" class="d-block w-100" style="height: 500px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="assets/images/slide 3.jpg" alt="" class="d-block w-100" style="height: 500px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="assets/images/slide 4" alt="" class="d-block w-100" style="height: 500px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="assets/images/slide 5.jpg" alt="" class="d-block w-100" style="height: 500px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="assets/images/slide 6.jpg" alt="" class="d-block w-100" style="height: 500px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="assets/images/slide 7.jpg" alt="" class="d-block w-100" style="height: 500px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="assets/images/slide 8.jpg" alt="" class="d-block w-100" style="height: 500px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="assets/images/slide 9.jpg" alt="" class="d-block w-100" style="height: 500px;">
+                </div>
+            </div>
+
+            <!-- Left and Right controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselavengers" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselavengers" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <!-- Services -->
+    <div class="container" id="services">
+        <div class="row mt-5 mb-5">
+            <div class="card col-lg-2 col-md-6 p-1">
+                <img class="card-img-top" src="assets/images/s 1.jpg" alt="" style="width: 100%; height: 250px;">
+                <div class="card-body">
+                    <h6 class="card-title">Iron Man</h6>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="offcanvas"
+                        data-bs-target="#demo1">Download</button>
+                </div>
+            </div>
+
+            <div class="card col-lg-2 col-md-6 p-1">
+                <img class="card-img-top" src="assets/images/s 2.jpeg" alt="" style="width: 100%; height: 250px;">
+                <div class="card-body">
+                    <h6 class="card-title">Dr. Strange</h6>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="offcanvas"
+                        data-bs-target="#demo2">Download</button>
+                </div>
+            </div>
+
+            <div class="card col-lg-2 col-md-6 p-1">
+                <img class="card-img-top" src="assets/images/s 3.jpg" alt="" style="width: 100%; height: 250px;">
+                <div class="card-body">
+                    <h6 class="card-title">Hulk</h6>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="offcanvas"
+                        data-bs-target="#demo3">Download</button>
+                </div>
+            </div>
+
+            <div class="card col-lg-2 col-md-6 p-1">
+                <img class="card-img-top" src="assets/images/s 4.jpg" alt="" style="width: 100%; height: 250px;">
+                <div class="card-body">
+                    <h6 class="card-title">Thor</h6>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="offcanvas"
+                        data-bs-target="#demo4">Download</button>
+                </div>
+            </div>
+
+            <div class="card col-lg-2 col-md-6 p-1">
+                <img class="card-img-top" src="assets/images/s 5.jpg" alt="" style="width: 100%; height: 250px;">
+                <div class="card-body">
+                    <h6 class="card-title">Captain America</h6>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="offcanvas"
+                        data-bs-target="#demo5">Download</button>
+                </div>
+            </div>
+
+            <div class="card col-lg-2 col-md-6 p-1">
+                <img class="card-img-top" src="assets/images/s 6.jpg" alt="" style="width: 100%; height: 250px;">
+                <div class="card-body">
+                    <h6 class="card-title">Spider Man</h6>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="offcanvas"
+                        data-bs-target="#demo6">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Cards -->
+    <h3 class="text-center text-dark bg-warning p-4 mx-5" style=" letter-spacing: 12px; "> OUR TEAM</h3>
+
+    <div class="container mt-4" id="aboutus">
+        <div class="row justify-content-center">
+            <div class="card col-lg-3 col-md-6 p-0">
+                <img class="card-img-top" src="assets/images/member 1" alt="" style="width: 100%; height: 350px;">
+                <div class="card-body">
+                    <h5 class="card-title">Chris Evans</h5>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#crisevans">See Profile</button>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-md-6 p-0">
+                <img class="card-img-top" src="assets/images/member 2.jpg" alt="" style="width: 100%; height: 350px;">
+                <div class="card-body">
+                    <h5 class="card-title">Benedict Cumberbatch</h5>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#benedictcumberbatch">See Profile</button>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-md-6 p-0">
+                <img class="card-img-top" src="assets/images/member 3.jpg" alt="" style="width: 100%; height: 350px;">
+                <div class="card-body">
+                    <h5 class="card-title">Tony Stark</h5>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#tonystark">See Profile</button>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-md-6 p-0">
+                <img class="card-img-top" src="assets/images/member 4.jpg" alt="" style="width: 100%; height: 350px;">
+                <div class="card-body">
+                    <h5 class="card-title">Chris Hemsworth</h5>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#chrishemsworth">See Profile</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+
+    <!-- Gallery -->
+    <h3 class="text-center text-primary" style="opacity: 50%; letter-spacing: 12px; ">GALLERY</h3>
+    <hr>
+    <div class="container-fluid" id="gallery">
+        <div class="row">
+            <img class="col-lg-4" src="assets/images/slide 5.jpg" alt="">
+            <img class="col-lg-4" src="assets/images/slide 4" alt="">
+            <img class="col-lg-4" src="assets/images/slide 9.jpg" alt="">
+
+        </div>
+        <div class="row mt-3">
+            <img class="col-lg-4" src="assets/images/slide 6.jpg" alt="">
+            <img class="col-lg-4" src="assets/images/slide 7.jpg" alt="">
+            <img class="col-lg-4" src="assets/images/slide 8.jpg" alt="">
+        </div>
+    </div><br>
+    <hr><br>
+
+
+    <!-- Youtube and info -->
+    <div class="container-fluid " id="information">
+        <div class="row py-3">
+            <div class="col-lg-5 pt-2">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Tle5JtoKtQ0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-7 ">
+                <h5>Marvel :</h5>
+                <p>Marvel's The Avengers[5] (classified under the name Marvel Avengers Assemble in the United
+                    Kingdom
+                    and Ireland),[1][6] or simply The Avengers, is a 2012 American superhero film based on the
+                    Marvel
+                    Comics superhero team of the same name. Produced by Marvel Studios and distributed by Walt
+                    Disney
+                    Studios Motion Pictures,[a] it is the sixth film in the Marvel Cinematic Universe (MCU). Written
+                    and
+                    directed by Joss Whedon, the film features an ensemble cast including Robert Downey Jr., Chris
+                    Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the Avengers,
+                    alongside Tom Hiddleston, Stellan Skarsgård, and Samuel L. Jackson. In the film, Nick Fury and
+                    the
+                    spy agency S.H.I.E.L.D. recruit Tony Stark, Steve Rogers, Bruce Banner, Thor, Natasha Romanoff,
+                    and
+                    Clint Barton to form a team capable of stopping Thor's brother Loki from subjugating Earth.The
+                    film's development began when Marvel Studios received a loan from Merrill Lynch in April 2005.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="crisevans" class="modal fade">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                    <h4 class="modal-tital">Chris Evans</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <img src="assets/images/modal 1" alt="" style="height: 200px;">
+                    <p>Christopher Robert Evans (born June 13, 1981) is an American actor. He began his career with
+                        roles in television series such as Opposite Sex in 2000. Following appearances in several
+                        teen
+                        films, including 2001's Not Another Teen Movie, he gained attention for his portrayal of
+                        Marvel
+                        Comics character the Human Torch in Fantastic Four (2005) and Fantastic Four: Rise of the
+                        Silver
+                        Surfer (2007). Evans made further appearances in film adaptations of comic books and graphic
+                        novels: TMNT (2007), Scott Pilgrim vs. the World (2010), and Snowpiercer (2013).
+
+                        Evans gained wider recognition for portraying Captain America in various Marvel Cinematic
+                        Universe films, from Captain America: The First Avenger (2011) to Avengers: Endgame (2019).
+                        His
+                        work in the franchise established him as one of the world's highest-paid actors.[1]
+
+                        Aside from comic book roles, Evans has starred in the drama Gifted (2017), the mystery film
+                        Knives Out (2019), and the television miniseries Defending Jacob (2020). He made his
+                        directorial
+                        debut in 2014 with the romantic drama Before We Go, which he also produced and starred in.
+                        Evans
+                        made his Broadway debut in the 2018 revival of Kenneth Lonergan's play Lobby Hero, which
+                        earned
+                        him a Drama League Award nomination.</p>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="benedictcumberbatch" class="modal fade">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                    <h4 class="modal-tital">Benedict Cumberbatch</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <img src="assets/images/modal 2.jpg" alt="" style="height: 200px;">
+                    <p>Benedict Timothy Carlton Cumberbatch CBE (born 19 July 1976) is an English actor. Known for
+                        his work on screen and stage, he has received various accolades, including a British Academy
+                        Television Award, a Primetime Emmy Award and a Laurence Olivier Award. He has also been
+                        nominated for two Academy Awards, two British Academy Film Awards and four Golden Globe
+                        Awards. In 2014, Time magazine named him one of the 100 most influential people in the
+                        world, and in 2015, he was appointed a CBE at Buckingham Palace for services to the
+                        performing arts and to charity.
+
+                        Cumberbatch studied drama at the Victoria University of Manchester and obtained a Master of
+                        Arts in classical acting at the London Academy of Music and Dramatic Art. He began acting in
+                        Shakespearean theatre productions before making his West End debut in Richard Eyre's revival
+                        of Hedda Gabler in 2005. Since then, he has starred in Royal National Theatre productions of
+                        After the Dance (2010) and Frankenstein (2011), winning the Laurence Olivier Award for Best
+                        Actor for the latter. In 2015, he played the title role in Hamlet at the Barbican Theatre.
+
+                        Cumberbatch's television work includes his performance as Stephen Hawking in the television
+                        film Hawking (2004). He gained greater recognition for playing Sherlock Holmes in the BBC
+                        series Sherlock from 2010 to 2017, for which he won a Primetime Emmy Award for Outstanding
+                        Lead Actor in a Miniseries or a Movie. For playing the title role in the miniseries Patrick
+                        Melrose (2018), he won the British Academy Television Award for Best Actor.</p>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="tonystark" class="modal fade">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                    <h4 class="modal-tital">Tony Stark</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <img src="assets/images/modal 3.jpg" alt="" style="height: 200px;">
+                    <p>CAnthony Edward Stark, more commonly known as Tony Stark, is a fictional character primarily
+                        portrayed by Robert Downey Jr. in the Marvel Cinematic Universe (MCU) media franchise—based
+                        on the Marvel Comics character of the same name—commonly known by his alias, Iron Man. Stark
+                        is initially depicted as an industrialist, genius inventor, and playboy who is CEO of Stark
+                        Industries. Initially the chief weapons manufacturer for the U.S. military, he has a change
+                        of heart and redirects his technical knowledge into the creation of mechanized suits of
+                        armor which he uses to defend against those that would threaten peace around the world. He
+                        becomes a founding member and leader of the Avengers. Following his failed Ultron Program,
+                        the internal conflict within the Avengers due to the Sokovia Accords, and Thanos
+                        successfully erasing half of all life in the Blip, Stark retires, marries Pepper Potts, and
+                        they have a daughter named Morgan. However, Stark rejoins the Avengers on a final mission to
+                        undo Thanos' actions. He creates time travel, and the Avengers successfully restore
+                        trillions of lives across the universe. However, Stark inevitably sacrifices his life to
+                        defeat Thanos and his army. Stark chooses Peter Parker as a successor.
+
+                        Stark is one of the central figures of the MCU, having appeared in eleven films as of 2022.
+                        The character and Downey's performance have been credited with helping to cement the MCU as
+                        a multi-billion-dollar franchise, with Stark's evolution often being considered the defining
+                        arc of the series.[4]
+
+                        Alternate versions of Stark from within the MCU multiverse appear in the animated series
+                        What If...? (2021), voiced by Mick Wingert, reprising his role from previous non-MCU
+                        animated media.</p>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="chrishemsworth" class="modal fade">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                    <h4 class="modal-tital">Chris Hemsworth</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <img src="assets/images/modal 4.jpg" alt="" style="height: 200px;">
+                    <p>Christopher Hemsworth[1] AM (born 11 August 1983[2]) is an Australian actor. He rose to
+                        prominence playing Kim Hyde in the Australian television series Home and Away (2004–2007)
+                        before beginning a film career in Hollywood. In the Marvel Cinematic Universe (MCU),
+                        Hemsworth started playing Thor with the 2011 film of the same name and most recently
+                        reprised the role in Thor: Love and Thunder (2022), which established him among the world's
+                        highest-paid actors.[3][4]
+
+                        His other film roles include the action films Star Trek (2009), Snow White and the Huntsman
+                        (2012), Red Dawn (2012), Blackhat (2015), Men in Black: International (2019), Extraction
+                        (2020), the thriller A Perfect Getaway (2009) and the comedy Ghostbusters (2016).
+                        Hemsworth's most critically acclaimed films include the comedy horror The Cabin in the Woods
+                        (2012) and the biographical sports film Rush (2013) in which he portrayed James Hunt.</p>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end" id="demo1">
+        <div class="offcanvas-header bg-success">
+            <h1 class="offcanvas-title ">MOVIE HOUSE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img src="assets/images/s 1.jpg" alt="" style="width: 100%; height: 400px;">
+            <h4>Iron Man</h4>
+            <a href="#download1" class="d-block">Click here to download full hd movie</a><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odit alias quae voluptatum tempora
+                rem incidunt fuga a, ratione molestiae. Rerum ex iste, doloremque enim repudiandae cum quis quaerat
+                quisquam. Laboriosam vitae quidem vel! Voluptates iste provident, eos suscipit delectus autem impedit
+                rerum. Corporis maxime magni repudiandae mollitia corrupti labore at! Repudiandae cum nisi, doloremque
+                aspernatur nobis perspiciatis blanditiis unde obcaecati consequatur a porro dolores esse et autem. Cum
+                dicta quae rerum dolore. Culpa, velit dolore! Sapiente nemo libero exercitationem dignissimos? Quae
+                delectus eos quam ipsum porro temporibus dolore nesciunt repudiandae totam, exercitationem mollitia
+                cupiditate magnam pariatur nulla maxime ad.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis architecto fugit, corporis nesciunt
+                facilis provident, vel nam perferendis modi ea ratione id similique voluptatem ducimus doloribus libero
+                omnis impedit ad sequi dolorum aspernatur veniam! Minus inventore ad nulla aliquam labore debitis alias
+                exercitationem at molestias repellat, veritatis ratione qui ab.</p>
+            <a href="https://www.imdb.com/title/tt0371746/" target="_blank" id="download1"
+                class="btn btn-success justify-content-center" type="button">Download Movie
+                Now</a>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" id="demo2">
+        <div class="offcanvas-header bg-success">
+            <h1 class="offcanvas-title ">MOVIE HOUSE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img src="assets/images/s 2.jpeg" alt="" style="width: 100%; height: 400px;">
+            <h4>Dr. Strange</h4>
+            <a href="#download2" class="d-block">Click here to download full hd movie</a><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odit alias quae voluptatum tempora
+                rem incidunt fuga a, ratione molestiae. Rerum ex iste, doloremque enim repudiandae cum quis quaerat
+                quisquam. Laboriosam vitae quidem vel! Voluptates iste provident, eos suscipit delectus autem impedit
+                rerum. Corporis maxime magni repudiandae mollitia corrupti labore at! Repudiandae cum nisi, doloremque
+                aspernatur nobis perspiciatis blanditiis unde obcaecati consequatur a porro dolores esse et autem. Cum
+                dicta quae rerum dolore. Culpa, velit dolore! Sapiente nemo libero exercitationem dignissimos? Quae
+                delectus eos quam ipsum porro temporibus dolore nesciunt repudiandae totam, exercitationem mollitia
+                cupiditate magnam pariatur nulla maxime ad.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis architecto fugit, corporis nesciunt
+                facilis provident, vel nam perferendis modi ea ratione id similique voluptatem ducimus doloribus libero
+                omnis impedit ad sequi dolorum aspernatur veniam! Minus inventore ad nulla aliquam labore debitis alias
+                exercitationem at molestias repellat, veritatis ratione qui ab.</p>
+            <a href="https://www.imdb.com/title/tt0371746/" id="download1"
+                class="btn btn-success justify-content-center" type="button">Download Movie
+                Now</a>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" id="demo3">
+        <div class="offcanvas-header bg-success">
+            <h1 class="offcanvas-title ">MOVIE HOUSE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img src="assets/images/s 3.jpg" alt="" style="width: 100%; height: 400px;">
+            <h4>Hulk</h4>
+            <a href="#download3" class="d-block">Click here to download full hd movie</a><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odit alias quae voluptatum tempora
+                rem incidunt fuga a, ratione molestiae. Rerum ex iste, doloremque enim repudiandae cum quis quaerat
+                quisquam. Laboriosam vitae quidem vel! Voluptates iste provident, eos suscipit delectus autem impedit
+                rerum. Corporis maxime magni repudiandae mollitia corrupti labore at! Repudiandae cum nisi, doloremque
+                aspernatur nobis perspiciatis blanditiis unde obcaecati consequatur a porro dolores esse et autem. Cum
+                dicta quae rerum dolore. Culpa, velit dolore! Sapiente nemo libero exercitationem dignissimos? Quae
+                delectus eos quam ipsum porro temporibus dolore nesciunt repudiandae totam, exercitationem mollitia
+                cupiditate magnam pariatur nulla maxime ad.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis architecto fugit, corporis nesciunt
+                facilis provident, vel nam perferendis modi ea ratione id similique voluptatem ducimus doloribus libero
+                omnis impedit ad sequi dolorum aspernatur veniam! Minus inventore ad nulla aliquam labore debitis alias
+                exercitationem at molestias repellat, veritatis ratione qui ab.</p>
+            <a href="https://www.imdb.com/title/tt0371746/" id="download1"
+                class="btn btn-success justify-content-center" type="button">Download Movie
+                Now</a>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" id="demo4">
+        <div class="offcanvas-header bg-success">
+            <h1 class="offcanvas-title ">MOVIE HOUSE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img src="assets/images/s 4.jpg" alt="" style="width: 100%; height: 400px;">
+            <h4>Thor</h4>
+            <a href="#download4" class="d-block">Click here to download full hd movie</a><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odit alias quae voluptatum tempora
+                rem incidunt fuga a, ratione molestiae. Rerum ex iste, doloremque enim repudiandae cum quis quaerat
+                quisquam. Laboriosam vitae quidem vel! Voluptates iste provident, eos suscipit delectus autem impedit
+                rerum. Corporis maxime magni repudiandae mollitia corrupti labore at! Repudiandae cum nisi, doloremque
+                aspernatur nobis perspiciatis blanditiis unde obcaecati consequatur a porro dolores esse et autem. Cum
+                dicta quae rerum dolore. Culpa, velit dolore! Sapiente nemo libero exercitationem dignissimos? Quae
+                delectus eos quam ipsum porro temporibus dolore nesciunt repudiandae totam, exercitationem mollitia
+                cupiditate magnam pariatur nulla maxime ad.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis architecto fugit, corporis nesciunt
+                facilis provident, vel nam perferendis modi ea ratione id similique voluptatem ducimus doloribus libero
+                omnis impedit ad sequi dolorum aspernatur veniam! Minus inventore ad nulla aliquam labore debitis alias
+                exercitationem at molestias repellat, veritatis ratione qui ab.</p>
+            <a href="https://www.imdb.com/title/tt0371746/" id="download1"
+                class="btn btn-success justify-content-center" type="button">Download Movie
+                Now</a>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" id="demo5">
+        <div class="offcanvas-header bg-success">
+            <h1 class="offcanvas-title ">MOVIE HOUSE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img src="assets/images/s 5.jpg" alt="" style="width: 100%; height: 400px;">
+            <h4>Captain America</h4>
+            <a href="#download5" class="d-block">Click here to download full hd movie</a><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odit alias quae voluptatum tempora
+                rem incidunt fuga a, ratione molestiae. Rerum ex iste, doloremque enim repudiandae cum quis quaerat
+                quisquam. Laboriosam vitae quidem vel! Voluptates iste provident, eos suscipit delectus autem impedit
+                rerum. Corporis maxime magni repudiandae mollitia corrupti labore at! Repudiandae cum nisi, doloremque
+                aspernatur nobis perspiciatis blanditiis unde obcaecati consequatur a porro dolores esse et autem. Cum
+                dicta quae rerum dolore. Culpa, velit dolore! Sapiente nemo libero exercitationem dignissimos? Quae
+                delectus eos quam ipsum porro temporibus dolore nesciunt repudiandae totam, exercitationem mollitia
+                cupiditate magnam pariatur nulla maxime ad.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis architecto fugit, corporis nesciunt
+                facilis provident, vel nam perferendis modi ea ratione id similique voluptatem ducimus doloribus libero
+                omnis impedit ad sequi dolorum aspernatur veniam! Minus inventore ad nulla aliquam labore debitis alias
+                exercitationem at molestias repellat, veritatis ratione qui ab.</p>
+            <a href="https://www.imdb.com/title/tt0371746/" id="download1"
+                class="btn btn-success justify-content-center" type="button">Download Movie
+                Now</a>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" id="demo6">
+        <div class="offcanvas-header bg-success">
+            <h1 class="offcanvas-title ">MOVIE HOUSE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img src="assets/images/s 6.jpg" alt="" style="width: 100%; height: 400px;">
+            <h4>Spider Man</h4>
+            <a href="#download6" class="d-block">Click here to download full hd movie</a><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odit alias quae voluptatum tempora
+                rem incidunt fuga a, ratione molestiae. Rerum ex iste, doloremque enim repudiandae cum quis quaerat
+                quisquam. Laboriosam vitae quidem vel! Voluptates iste provident, eos suscipit delectus autem impedit
+                rerum. Corporis maxime magni repudiandae mollitia corrupti labore at! Repudiandae cum nisi, doloremque
+                aspernatur nobis perspiciatis blanditiis unde obcaecati consequatur a porro dolores esse et autem. Cum
+                dicta quae rerum dolore. Culpa, velit dolore! Sapiente nemo libero exercitationem dignissimos? Quae
+                delectus eos quam ipsum porro temporibus dolore nesciunt repudiandae totam, exercitationem mollitia
+                cupiditate magnam pariatur nulla maxime ad.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis architecto fugit, corporis nesciunt
+                facilis provident, vel nam perferendis modi ea ratione id similique voluptatem ducimus doloribus libero
+                omnis impedit ad sequi dolorum aspernatur veniam! Minus inventore ad nulla aliquam labore debitis alias
+                exercitationem at molestias repellat, veritatis ratione qui ab.</p>
+            <a href="https://www.imdb.com/title/tt0371746/" id="download1"
+                class="btn btn-success justify-content-center" type="button">Download Movie
+                Now</a>
+        </div>
+    </div>
+
+
+    <!-- Form -->
+    
+
+    <div id="loginform" class="modal fade">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                    <h4 class="modal-tital">Login Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                        <div class="form-floating col-lg-6">
+                            <input type="text" class="form-control" placeholder="First Name">
+                            <label class="form-label">First Name</label>
+                        </div>
+                        <div class="form-floating col-lg-6">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                            <label class="form-label">Last Name</label>
+                        </div>
+                
+                        <div class="d-flex flex-wrap col-lg-6">
+                            <label class="form-label">Mobile No :</label>
+                            <input type="number" class="form-control" placeholder="Mobile No">
+                           
+                        </div>
+                        <div class="d-flex flex-wrap col-lg-6">
+                            <label class="form-label">Date Of Birth :</label>
+                            <input type="date" class="form-control" placeholder="DOB">
+                            
+                        </div>
+                
+                        <div>
+                            <label class="form-label">Gender :</label>
+                            <label>
+                                <input type="radio" class="form-check-input" name="gender">Male
+                            </label>
+                            <label>
+                                <input type="radio" class="form-check-input" name="gender">Female
+                            </label>
+                            <label>
+                                <input type="radio" class="form-check-input" name="gender">Other
+                            </label>
+                            
+                        </div>
+                        
+                
+                        <div class="col-lg-6">
+                        <label class="form-label">City</label>
+                        <select class="form-select">
+                            <option>--Select--</option>
+                            <option>Kolhapur</option>
+                            <option>Pune</option>
+                            <option>Satara</option>
+                            <option>Mumbai</option>
+                            <option>Sangli</option>
+                        </select>
+                    </div>
+                
+                        <div class="col-lg-6">
+                        <label class="form-label">State</label>
+                        <select class="form-select">
+                            <option>--Select--</option>
+                            <option>Maharashtra</option>
+                            <option>Karnataka</option>
+                            <option>Goa</option>
+                            <option>Gujrat</option>
+                            <option>Tamil-nadu</option>
+                        </select>
+                    </div>
+                
+                    <label class="form-label">Address :</label>
+                    <textarea class="form-control"></textarea>
+                
+                
+                    </div>
+                    </form>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formsuccess" data-bs-dismiss="modal">Submit</button>
+                    <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Login success -->
+    <div id="formsuccess" class="modal fade">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                    <h4 class="modal-tital">Login Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <div class="alert alert-success">
+                        <strong>Success!</strong> Login Successfull...
+                      </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center ">
+
+        <div>
+            <button type="button" class="btn btn-warning mt-5">Sign in for more access</button>
+        </div>
+
+        <div>
+            <ul class="list-unstyled list-inline mt-3">
+                <li class="list-inline-item">
+                    <a href="" class="btn-floating btn-lg"><i class="fa-brands fa-tiktok text-white"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="" class="btn-floating btn-lg"><i class="fa-brands fa-instagram text-white"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="" class="btn-floating btn-lg"><i class="fa-brands fa-twitter text-white"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="" class="btn-floating btn-lg"><i class="fa-brands fa-youtube text-white"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="" class="btn-floating btn-lg"><i class="fa-brands fa-square-facebook text-white"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <span class="mx-3">Get the IMDb App</span>
+            <span class="mx-3">Help</span>
+            <span class="mx-3">Site Index</span>
+            <span class="mx-3">IMDbPro</span>
+            <span class="mx-3">Box Office Mojo</span>
+            <span class="mx-3">IMDb Developer</span>
+        </div>
+        <div class="mt-3">
+            <span class="mx-4">Press Room</span>
+            <span class="mx-4">Advertising</span>
+            <span class="mx-4">Jobs</span>
+            <span class="mx-4">Conditions of Use</span>
+            <span class="mx-4">Privacy Policy</span>
+            <span class="mx-4">Your Ads Privacy Choices</span>
+        </div>
+
+        <!-- symbol -->
+        <div class="d-flex align-items-end justify-content-center mt-5">
+            <img src="assets/images/logo1.png" alt="" style="width: 40px;">
+            <h5 style="font-family: 'Times New Roman', Times, serif;">AVENGERS</h5>
+        </div>
+
+        <div class="mt-4 pb-5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; opacity: 50%;">
+            &copy;2015-2023 by Vaibhav Patil
+        </div>
+
+
+    </footer>
+
+
+
+
+
+    
+
+    <script>
+        
+
+    </script>
+
+
+
+</body>
+
+</html>
